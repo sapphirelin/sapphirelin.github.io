@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="zh-tw" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>無法部署 TKC 解法 | Content Libary 憑證置換 | Sapphire Blog</title><meta name="keywords" content="VMware,Tanzu,work hack,ssh,troubleshooting,ssl thumbprint"><meta name="author" content="Sapphire"><meta name="copyright" content="Sapphire"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="&#x2F; 問題發現 &#x2F;症狀 (錯誤訊息)原本 vSphere with Tanzu 環境都好好的，某天部署新 TKC 一直不成功。（狀態一直停在 creating ，以及 control-plane VM 無法開機） 相關 error message :  HTTP request error: cannot authenticate SSL certificate for host wp-conten">
+<meta property="og:type" content="article">
+<meta property="og:title" content="無法部署 TKC 解法 | Content Libary 憑證置換">
+<meta property="og:url" content="https://sapphirelin.github.io/20210723-%E7%84%A1%E6%B3%95%E9%83%A8%E7%BD%B2-TKC-%E8%A7%A3%E6%B3%95-Content-Libary-%E6%86%91%E8%AD%89%E7%BD%AE%E6%8F%9B/index.html">
+<meta property="og:site_name" content="Sapphire Blog">
+<meta property="og:description" content="&#x2F; 問題發現 &#x2F;症狀 (錯誤訊息)原本 vSphere with Tanzu 環境都好好的，某天部署新 TKC 一直不成功。（狀態一直停在 creating ，以及 control-plane VM 無法開機） 相關 error message :  HTTP request error: cannot authenticate SSL certificate for host wp-conten">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://i.imgur.com/PCQVF2t.png">
+<meta property="article:published_time" content="2021-07-23T15:53:55.000Z">
+<meta property="article:modified_time" content="2021-07-23T17:05:59.884Z">
+<meta property="article:author" content="Sapphire">
+<meta property="article:tag" content="VMware">
+<meta property="article:tag" content="Tanzu">
+<meta property="article:tag" content="work hack">
+<meta property="article:tag" content="ssh">
+<meta property="article:tag" content="troubleshooting">
+<meta property="article:tag" content="ssl thumbprint">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/PCQVF2t.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://sapphirelin.github.io/20210723-%E7%84%A1%E6%B3%95%E9%83%A8%E7%BD%B2-TKC-%E8%A7%A3%E6%B3%95-Content-Libary-%E6%86%91%E8%AD%89%E7%BD%AE%E6%8F%9B/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-FL3MEHNPKP"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FL3MEHNPKP');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '無法部署 TKC 解法 | Content Libary 憑證置換',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-07-24 01:05:59'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Sapphire Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.imgur.com/0DMymP8.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">22</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Sapphire Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">無法部署 TKC 解法 | Content Libary 憑證置換</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-07-23T15:53:55.000Z" title="Created 2021-07-23 23:53:55">2021-07-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-07-23T17:05:59.884Z" title="Updated 2021-07-24 01:05:59">2021-07-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/work-hack/">work hack</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/">那根樹枝 Tanzu</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="無法部署 TKC 解法 | Content Libary 憑證置換"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="問題發現"><a href="#問題發現" class="headerlink" title="/ 問題發現 /"></a>/ 問題發現 /</h2><h3 id="症狀-錯誤訊息"><a href="#症狀-錯誤訊息" class="headerlink" title="症狀 (錯誤訊息)"></a>症狀 (錯誤訊息)</h3><p>原本 vSphere with Tanzu 環境都好好的，某天部署新 TKC 一直不成功。<br>（狀態一直停在 creating ，以及 control-plane VM 無法開機）</p>
+<p>相關 error message :</p>
+<blockquote>
+<p>HTTP request error: cannot authenticate SSL certificate for host wp-content.vmware.com.</p>
+</blockquote>
+<p>或如下圖：</p>
+<blockquote>
+<p><img src="https://i.imgur.com/VMDdzS6.png"></p>
+</blockquote>
+<h3 id="患者-會發生的環境"><a href="#患者-會發生的環境" class="headerlink" title="患者 (會發生的環境)"></a>患者 (會發生的環境)</h3><p> Content Libary 利用訂閱方式下載 <a target="_blank" rel="noopener" href="https://wp-content.vmware.com/v2/latest/lib.json">Tanzu Kubernetes Release(TKR)</a> 的 Tanzu 環境</p>
+<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>在 6/29 的時候 VMware 將 <a target="_blank" rel="noopener" href="https://wp-content.vmware.com/v2/latest/lib.json">library</a> 更換了憑證，不過我自己地端 SSL thumbprint 停留在上一張，導致沒辦法拉新的 OVA 下來部署 TKC。</p>
+<h2 id="解決方案"><a href="#解決方案" class="headerlink" title="/ 解決方案 /"></a>/ 解決方案 /</h2><p>把憑證換新！</p>
+<h3 id="1-SSH-進入-VCSA"><a href="#1-SSH-進入-VCSA" class="headerlink" title="1. SSH 進入 VCSA"></a>1. SSH 進入 VCSA</h3><p>以 <code>root</code> 權限登入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">login as: root</span><br><span class="line">Pre-authentication banner message from server:</span><br><span class="line">|</span><br><span class="line">| VMware vCenter Server 7.0.2.00200</span><br><span class="line">|</span><br><span class="line">| Type: vCenter Server with an embedded Platform Services Controller</span><br><span class="line">|</span><br><span class="line">End of banner message from server</span><br><span class="line">root@vcsa-01.haas-461.pez.vmware.com&#x27;s password:</span><br><span class="line">    ┌──────────────────────────────────────────────────────────────────────┐</span><br><span class="line">    │                 • MobaXterm Personal Edition v21.2 •                 │</span><br><span class="line">    │               (SSH client, X server and network tools)               │</span><br><span class="line">    │                                                                      │</span><br><span class="line">    │ ➤ SSH session to root@vcsa-01.haas-461.pez.vmware.com                │</span><br><span class="line">    │   • Direct SSH      :  ✔                                             │</span><br><span class="line">    │   • SSH compression :  ✔                                             │</span><br><span class="line">    │   • SSH-browser     :  ✔                                             │</span><br><span class="line">    │   • X11-forwarding  :  ✘  (disabled or not supported by server)      │</span><br><span class="line">    │                                                                      │</span><br><span class="line">    │ ➤ For more info, ctrl+click on help or visit our website.            │</span><br><span class="line">    └──────────────────────────────────────────────────────────────────────┘</span><br><span class="line"></span><br><span class="line">Connected to service</span><br><span class="line"></span><br><span class="line">    * List APIs: &quot;help api list&quot;</span><br><span class="line">    * List Plugins: &quot;help pi list&quot;</span><br><span class="line">    * Launch BASH: &quot;shell&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-切換到-Shell"><a href="#2-切換到-Shell" class="headerlink" title="2. 切換到 Shell"></a>2. 切換到 Shell</h3><blockquote>
+<p>參考： <a target="_blank" rel="noopener" href="https://kb.vmware.com/s/article/2100508">Toggling the vCenter Server Appliance default shell</a></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Command&gt; shell</span><br><span class="line">Shell access is granted to root</span><br><span class="line">root@vcsa-01 [ ~ ]# </span><br></pre></td></tr></table></figure>
+
+<h3 id="3-列出-content-library"><a href="#3-列出-content-library" class="headerlink" title="3. 列出 content library"></a>3. 列出 content library</h3><p>指令： <code>dcli com vmware content library list</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">root@vcsa-01 [ ~ ]# dcli com vmware content library list</span><br><span class="line">Username: administrator@vsphere.local</span><br><span class="line">Password: *******************</span><br><span class="line">Do you want to save credentials in the credstore? (y or n) [y]:y</span><br><span class="line">- ebcdc3f6-4daa-4a6d-8f2e-ea169ec2dc17</span><br><span class="line">- 93ef8dba-3f93-4cad-a7a3-23f09569d16f</span><br><span class="line">- 7613fdb9-dd31-4096-ab7d-b1a637713865</span><br></pre></td></tr></table></figure>
+<p>如上，可以看到我的環境有 3 個 content library</p>
+<h3 id="4-依序查看，找到訂閱-TKR-的-content-library"><a href="#4-依序查看，找到訂閱-TKR-的-content-library" class="headerlink" title="4. 依序查看，找到訂閱 TKR 的 content library"></a>4. 依序查看，找到訂閱 TKR 的 content library</h3><p>指令： <code>dcli com vmware content library get --library-id &lt;輸入content libary id&gt;</code><br>找裡面訂閱網址為： <a target="_blank" rel="noopener" href="https://wp-content.vmware.com/v2/latest/lib.json">https://wp-content.vmware.com/v2/latest/lib.json</a><br>如下圖，在我的環境中 <code>93ef8dba-3f93-4cad-a7a3-23f09569d16f</code> 這張才是TKR:<br><img src="https://i.imgur.com/LjBJIeg.png"><br>可以看到我的是舊的 <code>BA:C6:4E:D9:AD:D4:53:B5:86:5A:5D:70:36:CF:89:93:D1:6C:F9:63</code></p>
+<h3 id="5-置換憑證"><a href="#5-置換憑證" class="headerlink" title="5. 置換憑證"></a>5. 置換憑證</h3><p>換成新的憑證指紋 <code>01:8d:fd:13:a6:9e:ca:ac:cb:7c:67:18:c1:47:11:8c:64:91:5d:c9</code>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@vcsa-01 [ ~ ]# dcli com vmware content subscribedlibrary update --library-id 93ef8dba-3f93-4cad-a7a3-23f09569d16f --subscription-info-ssl-thumbprint &#x27;01:8d:fd:13:a6:9e:ca:ac:cb:7c:67:18:c1:47:11:8c:64:91:5d:c9&#x27;</span><br><span class="line">root@vcsa-01 [ ~ ]#</span><br></pre></td></tr></table></figure>
+
+<h3 id="完成！"><a href="#完成！" class="headerlink" title="完成！"></a>完成！</h3><div class="owl-media owl-image owl-giphy"><img src="https://media.giphy.com/media/46hoyBGHiuNWmvePej/giphy.gif"></div>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/VMware/">VMware</a><a class="post-meta__tags" href="/tags/Tanzu/">Tanzu</a><a class="post-meta__tags" href="/tags/work-hack/">work hack</a><a class="post-meta__tags" href="/tags/ssh/">ssh</a><a class="post-meta__tags" href="/tags/troubleshooting/">troubleshooting</a><a class="post-meta__tags" href="/tags/ssl-thumbprint/">ssl thumbprint</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/20210724-Photon-OS-%E5%8F%8A%E5%85%B6%E4%BB%96%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/"><img class="prev-cover" src="https://i.imgur.com/PCQVF2t.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Photon OS 及其他作業系統憑證安裝總整理</div></div></a></div><div class="next-post pull-right"><a href="/20210719-TKC-%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%90%8C-Harbor-%E6%86%91%E8%AD%89%E6%96%B9%E5%BC%8F-%E7%A7%81%E5%80%89-harbor-%E7%9A%84%E6%AC%8A%E9%99%90%E9%9A%94%E9%9B%A2/"><img class="next-cover" src="https://i.imgur.com/PCQVF2t.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">TKC 使用不同 Harbor 憑證方式 | 私倉(harbor)的權限隔離</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/20210713-最速登入Tanzu-guest-cluster-node-方法-進去-TKC-節點/" title="最速登入Tanzu guest cluster node 方法 | 進去 TKC 節點"><img class="cover" src="https://i.imgur.com/PCQVF2t.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-13</div><div class="title">最速登入Tanzu guest cluster node 方法 | 進去 TKC 節點</div></div></a></div><div><a href="/20210716-Tanzu-鏡像倉庫憑證安裝法/" title="Tanzu 鏡像倉庫憑證安裝法"><img class="cover" src="https://i.imgur.com/PCQVF2t.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-16</div><div class="title">Tanzu 鏡像倉庫憑證安裝法</div></div></a></div><div><a href="/20210719-TKC-使用不同-Harbor-憑證方式-私倉-harbor-的權限隔離/" title="TKC 使用不同 Harbor 憑證方式 | 私倉(harbor)的權限隔離"><img class="cover" src="https://i.imgur.com/PCQVF2t.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-19</div><div class="title">TKC 使用不同 Harbor 憑證方式 | 私倉(harbor)的權限隔離</div></div></a></div><div><a href="/20210724-Photon-OS-及其他作業系統憑證安裝法/" title="Photon OS 及其他作業系統憑證安裝總整理"><img class="cover" src="https://i.imgur.com/PCQVF2t.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-24</div><div class="title">Photon OS 及其他作業系統憑證安裝總整理</div></div></a></div><div><a href="/20210630-VMware-SSO-Solutions-實作客製化單一登入-VDI/" title="VMware SSO Solutions: 實作客製化單一登入 VDI"><img class="cover" src="https://i.imgur.com/PCQVF2t.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-30</div><div class="title">VMware SSO Solutions: 實作客製化單一登入 VDI</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.imgur.com/0DMymP8.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Sapphire</div><div class="author-info__description">💎 跨領域探險家 💎</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">22</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div></div><a class="button--animated" id="card-info-btn" href="https://sapphirelin.github.io/"><i class="fab fa-github"></i><span>Find Me Elsewhere</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/sapphirelin" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://works.do/R/ti/p/sapphire@vmware" target="_blank" title="Line Work"><i class="fab fa-line"></i></a><a class="social-icon" href="https://sapphirelin.github.io/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%8F%E9%A1%8C%E7%99%BC%E7%8F%BE"><span class="toc-text">&#x2F; 問題發現 &#x2F;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%97%87%E7%8B%80-%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF"><span class="toc-text">症狀 (錯誤訊息)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%82%A3%E8%80%85-%E6%9C%83%E7%99%BC%E7%94%9F%E7%9A%84%E7%92%B0%E5%A2%83"><span class="toc-text">患者 (會發生的環境)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0"><span class="toc-text">原因</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%A1%88"><span class="toc-text">&#x2F; 解決方案 &#x2F;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-SSH-%E9%80%B2%E5%85%A5-VCSA"><span class="toc-text">1. SSH 進入 VCSA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%87%E6%8F%9B%E5%88%B0-Shell"><span class="toc-text">2. 切換到 Shell</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%97%E5%87%BA-content-library"><span class="toc-text">3. 列出 content library</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BE%9D%E5%BA%8F%E6%9F%A5%E7%9C%8B%EF%BC%8C%E6%89%BE%E5%88%B0%E8%A8%82%E9%96%B1-TKR-%E7%9A%84-content-library"><span class="toc-text">4. 依序查看，找到訂閱 TKR 的 content library</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%BD%AE%E6%8F%9B%E6%86%91%E8%AD%89"><span class="toc-text">5. 置換憑證</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%8C%E6%88%90%EF%BC%81"><span class="toc-text">完成！</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/20210724-Photon-OS-%E5%8F%8A%E5%85%B6%E4%BB%96%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/" title="Photon OS 及其他作業系統憑證安裝總整理"><img src="https://i.imgur.com/PCQVF2t.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Photon OS 及其他作業系統憑證安裝總整理"/></a><div class="content"><a class="title" href="/20210724-Photon-OS-%E5%8F%8A%E5%85%B6%E4%BB%96%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/" title="Photon OS 及其他作業系統憑證安裝總整理">Photon OS 及其他作業系統憑證安裝總整理</a><time datetime="2021-07-23T16:00:18.000Z" title="Created 2021-07-24 00:00:18">2021-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/20210723-%E7%84%A1%E6%B3%95%E9%83%A8%E7%BD%B2-TKC-%E8%A7%A3%E6%B3%95-Content-Libary-%E6%86%91%E8%AD%89%E7%BD%AE%E6%8F%9B/" title="無法部署 TKC 解法 | Content Libary 憑證置換"><img src="https://i.imgur.com/PCQVF2t.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="無法部署 TKC 解法 | Content Libary 憑證置換"/></a><div class="content"><a class="title" href="/20210723-%E7%84%A1%E6%B3%95%E9%83%A8%E7%BD%B2-TKC-%E8%A7%A3%E6%B3%95-Content-Libary-%E6%86%91%E8%AD%89%E7%BD%AE%E6%8F%9B/" title="無法部署 TKC 解法 | Content Libary 憑證置換">無法部署 TKC 解法 | Content Libary 憑證置換</a><time datetime="2021-07-23T15:53:55.000Z" title="Created 2021-07-23 23:53:55">2021-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/20210719-TKC-%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%90%8C-Harbor-%E6%86%91%E8%AD%89%E6%96%B9%E5%BC%8F-%E7%A7%81%E5%80%89-harbor-%E7%9A%84%E6%AC%8A%E9%99%90%E9%9A%94%E9%9B%A2/" title="TKC 使用不同 Harbor 憑證方式 | 私倉(harbor)的權限隔離"><img src="https://i.imgur.com/PCQVF2t.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="TKC 使用不同 Harbor 憑證方式 | 私倉(harbor)的權限隔離"/></a><div class="content"><a class="title" href="/20210719-TKC-%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%90%8C-Harbor-%E6%86%91%E8%AD%89%E6%96%B9%E5%BC%8F-%E7%A7%81%E5%80%89-harbor-%E7%9A%84%E6%AC%8A%E9%99%90%E9%9A%94%E9%9B%A2/" title="TKC 使用不同 Harbor 憑證方式 | 私倉(harbor)的權限隔離">TKC 使用不同 Harbor 憑證方式 | 私倉(harbor)的權限隔離</a><time datetime="2021-07-19T11:12:11.000Z" title="Created 2021-07-19 19:12:11">2021-07-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/20210718-Hexo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4-Hexo-%E7%B6%B2%E7%AB%99%E7%A7%98%E7%AC%88/" title="Hexo 常用指令"><img src="https://i.imgur.com/PCQVF2t.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo 常用指令"/></a><div class="content"><a class="title" href="/20210718-Hexo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4-Hexo-%E7%B6%B2%E7%AB%99%E7%A7%98%E7%AC%88/" title="Hexo 常用指令">Hexo 常用指令</a><time datetime="2021-07-18T09:21:24.000Z" title="Created 2021-07-18 17:21:24">2021-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/20210717-%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-10%E5%88%86%E9%90%98%E5%BB%BA%E5%A5%BD-github-hexo-%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/" title="從零開始 10分鐘建好 github + hexo 個人網站"><img src="https://i.imgur.com/PCQVF2t.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="從零開始 10分鐘建好 github + hexo 個人網站"/></a><div class="content"><a class="title" href="/20210717-%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-10%E5%88%86%E9%90%98%E5%BB%BA%E5%A5%BD-github-hexo-%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/" title="從零開始 10分鐘建好 github + hexo 個人網站">從零開始 10分鐘建好 github + hexo 個人網站</a><time datetime="2021-07-17T14:28:44.000Z" title="Created 2021-07-17 22:28:44">2021-07-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 By Sapphire</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Toggle Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
