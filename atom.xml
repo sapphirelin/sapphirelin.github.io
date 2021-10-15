@@ -6,7 +6,7 @@
   <link href="https://sapphirelin.github.io/atom.xml" rel="self"/>
   
   <link href="https://sapphirelin.github.io/"/>
-  <updated>2021-10-07T02:05:06.507Z</updated>
+  <updated>2021-10-15T12:33:30.787Z</updated>
   <id>https://sapphirelin.github.io/</id>
   
   <author>
@@ -21,12 +21,15 @@
     <link href="https://sapphirelin.github.io/20211007-%E5%AE%89%E8%A3%9D%E5%9C%B0%E7%AB%AF%E7%A7%81%E5%80%89-harbor-2-3-%E5%88%B0-photon-OS-VM/"/>
     <id>https://sapphirelin.github.io/20211007-%E5%AE%89%E8%A3%9D%E5%9C%B0%E7%AB%AF%E7%A7%81%E5%80%89-harbor-2-3-%E5%88%B0-photon-OS-VM/</id>
     <published>2021-10-07T01:51:13.000Z</published>
-    <updated>2021-10-07T02:05:06.507Z</updated>
+    <updated>2021-10-15T12:33:30.787Z</updated>
     
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="5bcd48d7b5e49e54dadb7a792778074fd774a9d863c6bc39db80e29e079db128">f49bdac5e3075bc64a0f136d228d6fa3f637260c8dd1907f74e478d20acdca7c8db4786cb0dae6ae13e58314ba621c55</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">新坑產文中，前導版：https://github.com/sapphirelin/harbor</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<p>新坑產文中：<a href="https://github.com/sapphirelin/harbor/tree/main/local-photon">https://github.com/sapphirelin/harbor/tree/main/local-photon</a></p>]]></content>
     
     
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+      
+      
+    <summary type="html">&lt;p&gt;新坑產文中：&lt;a href=&quot;https://github.com/sapphirelin/harbor/tree/main/local-photon&quot;&gt;https://github.com/sapphirelin/harbor/tree/main/local-photon</summary>
+      
     
     
     
@@ -52,9 +55,9 @@
     <link href="https://sapphirelin.github.io/20211007-%E5%8D%87%E7%B4%9A-vSphere-7U2c-7U2d-%E5%BE%8C-VM-Classes-%E6%AC%84%E4%BD%8D%E6%B6%88%E5%A4%B1%E5%95%8F%E9%A1%8C/"/>
     <id>https://sapphirelin.github.io/20211007-%E5%8D%87%E7%B4%9A-vSphere-7U2c-7U2d-%E5%BE%8C-VM-Classes-%E6%AC%84%E4%BD%8D%E6%B6%88%E5%A4%B1%E5%95%8F%E9%A1%8C/</id>
     <published>2021-10-07T01:49:21.000Z</published>
-    <updated>2021-10-07T01:49:50.290Z</updated>
+    <updated>2021-10-15T12:43:35.327Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="問題描述"><a href="#問題描述" class="headerlink" title="/ 問題描述 /"></a>/ 問題描述 /</h2><p>原本在 vSphere Namespace 應有 VM Service 區塊可以設定 VM CLASSES，升級至 vCenter 7U2c 或 vCenter 7U2d 後，該欄位消失了，也無法設定<br><img src="https://i.imgur.com/0D6mgQR.png"></p><p><img src="https://i.imgur.com/F8OKATY.jpg"></p><div class="owl-media owl-image owl-giphy"><img src="https://media.giphy.com/media/paramountnetwork-paramount-wifeswap-wifeswaptv-SUulFpXDxXgThRhNKG/giphy.gif"></div><p>還好既有設定沒有影響到， production 沒事沒事</p><h2 id="解決辦法"><a href="#解決辦法" class="headerlink" title="/ 解決辦法 /"></a>/ 解決辦法 /</h2><p>日前跟 VMware 、確認為小 Bug  ，不過不影響既有 production，workaround 如下：</p><h3 id="1-升級-Supervisor-Cluster"><a href="#1-升級-Supervisor-Cluster" class="headerlink" title="1. 升級 Supervisor Cluster"></a>1. 升級 Supervisor Cluster</h3><p>1.1 至 Workload Management<br><img src="https://i.imgur.com/joYXvMQ.png"></p><p>1.2 至Updates 頁籤，選擇 v1.20.2 版本並更新<br><img src="https://i.imgur.com/WqUXlVN.png"></p><p>1.3 確認 vSphere Namespace 版本為最新，背景會自動更新三台 SupervisorClusterControlPlaneVM<br><img src="https://i.imgur.com/0JO7XBm.png"></p><p>1.4 等待背景任務完成，可於 Recent Task 確認<br><img src="https://i.imgur.com/WL2HEzi.png"></p><p>完成， VM Service 卡片重新出現<br><img src="https://i.imgur.com/0D6mgQR.png"></p><h2 id="影響＆後續"><a href="#影響＆後續" class="headerlink" title="/ 影響＆後續 /"></a>/ 影響＆後續 /</h2><p>基本上因為 vSphere with Tanzu 7.0 U2a 才多了那張卡，如果是 U2 以前的環境可能會沒有發現他消失，還不能設定，<br>目前看來是 7U2c &amp; 7U2d 踩到的小問題，之後理論上 Supervisor Cluster 的 Kubernetes 只要在支持範圍，沒上到最新版都不應影響。</p><p>不過後續還是建議都遵循文件的 <a href="https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-tanzu/GUID-7B4C9B95-E394-42B8-A76E-6D213CB7DF48.html">vSphere with Tanzu Updates</a> 步驟全都都升一升：<br><img src="https://i.imgur.com/9C22XSe.png" alt="Imgur"></p><p>總之…</p><h3 id="完成！"><a href="#完成！" class="headerlink" title="完成！"></a>完成！</h3><div class="owl-media owl-image owl-giphy"><img src="https://media.giphy.com/media/abcnetwork-h4rLmOP2F6xh0bhYkF/giphy.gif"></div>]]></content>
+    <content type="html"><![CDATA[<h2 id="問題描述"><a href="#問題描述" class="headerlink" title="/ 問題描述 /"></a>/ 問題描述 /</h2><p>原本在 vSphere Namespace 應有 VM Service 區塊可以設定 VM CLASSES，升級至 vCenter 7U2c 或 vCenter 7U2d 後，該欄位消失了，也無法設定<br><img src="https://i.imgur.com/0D6mgQR.png"></p><p><img src="https://i.imgur.com/F8OKATY.jpg"></p><p><img src="https://media4.giphy.com/media/dXQEwIMcrTxK9nfQ1f/200w.webp?cid=ecf05e47gc4mbeb948gq3k3iim2iqxhn1rj2ji9hz3xa4sst&rid=200w.webp&ct=g"></p><p>不過不影響既有設定， production 沒事沒事</p><h2 id="解決辦法"><a href="#解決辦法" class="headerlink" title="/ 解決辦法 /"></a>/ 解決辦法 /</h2><p>workaround 如下：</p><h3 id="1-升級-Supervisor-Cluster"><a href="#1-升級-Supervisor-Cluster" class="headerlink" title="1. 升級 Supervisor Cluster"></a>1. 升級 Supervisor Cluster</h3><p>1.1 至 Workload Management<br><img src="https://i.imgur.com/joYXvMQ.png"></p><p>1.2 至 Updates 頁籤，選擇 v1.20.2 版本並更新<br><img src="https://i.imgur.com/WqUXlVN.png"></p><p>1.3 確認 vSphere Namespace 版本為最新，背景會自動更新三台 SupervisorClusterControlPlaneVM<br><img src="https://i.imgur.com/0JO7XBm.png"></p><p>1.4 等待背景任務完成，可於 Recent Task 確認<br><img src="https://i.imgur.com/WL2HEzi.png"></p><p>完成， VM Service 卡片重新出現<br><img src="https://i.imgur.com/0D6mgQR.png"></p><h2 id="影響＆後續"><a href="#影響＆後續" class="headerlink" title="/ 影響＆後續 /"></a>/ 影響＆後續 /</h2><p>基本上因為 vSphere with Tanzu 7.0 U2a 才多了 VM Service Card，如果是 U2 以前的環境可能會沒有發現他消失。</p><p>看起來純粹為升級至 U2c &amp; U2d 的小影響，在多個環境已經確認設定都會繼承，所以照著上述升級 Supervisor Cluster 的 Kubernetes Version 就好。</p><p>後續還是建議都遵循文件的 <a href="https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-tanzu/GUID-7B4C9B95-E394-42B8-A76E-6D213CB7DF48.html">vSphere with Tanzu Updates</a> 步驟全都都升一升：<br><img src="https://i.imgur.com/9C22XSe.png" alt="Imgur"></p><p>總之…</p><h3 id="完成！"><a href="#完成！" class="headerlink" title="完成！"></a>完成！</h3><p><img src="https://media1.giphy.com/media/h4rLmOP2F6xh0bhYkF/giphy.gif?cid=790b7611067d832cec08d862ac5c11306581d2357cd4abe0&rid=giphy.gif&ct=g"></p>]]></content>
     
     
       
