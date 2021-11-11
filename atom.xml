@@ -3,11 +3,11 @@
   <title>Sapphire Blog</title>
   
   <subtitle>Personal hack notes by Sapphire</subtitle>
-  <link href="https://sapphirelin.github.io/atom.xml" rel="self"/>
+  <link href="https://sapphirelin.com/atom.xml" rel="self"/>
   
-  <link href="https://sapphirelin.github.io/"/>
+  <link href="https://sapphirelin.com/"/>
   <updated>2021-10-15T12:33:30.787Z</updated>
-  <id>https://sapphirelin.github.io/</id>
+  <id>https://sapphirelin.com/</id>
   
   <author>
     <name>Sapphire</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>安裝地端私倉 harbor 2.3 到 photon OS VM</title>
-    <link href="https://sapphirelin.github.io/20211007-%E5%AE%89%E8%A3%9D%E5%9C%B0%E7%AB%AF%E7%A7%81%E5%80%89-harbor-2-3-%E5%88%B0-photon-OS-VM/"/>
-    <id>https://sapphirelin.github.io/20211007-%E5%AE%89%E8%A3%9D%E5%9C%B0%E7%AB%AF%E7%A7%81%E5%80%89-harbor-2-3-%E5%88%B0-photon-OS-VM/</id>
+    <link href="https://sapphirelin.com/20211007-%E5%AE%89%E8%A3%9D%E5%9C%B0%E7%AB%AF%E7%A7%81%E5%80%89-harbor-2-3-%E5%88%B0-photon-OS-VM/"/>
+    <id>https://sapphirelin.com/20211007-%E5%AE%89%E8%A3%9D%E5%9C%B0%E7%AB%AF%E7%A7%81%E5%80%89-harbor-2-3-%E5%88%B0-photon-OS-VM/</id>
     <published>2021-10-07T01:51:13.000Z</published>
     <updated>2021-10-15T12:33:30.787Z</updated>
     
@@ -33,27 +33,27 @@
     
     
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/categories/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/categories/work-hack/"/>
     
-    <category term="φῶς 光量子  Photon" scheme="https://sapphirelin.github.io/categories/work-hack/%CF%86%E1%BF%B6%CF%82-%E5%85%89%E9%87%8F%E5%AD%90-Photon/"/>
+    <category term="φῶς 光量子  Photon" scheme="https://sapphirelin.com/categories/work-hack/%CF%86%E1%BF%B6%CF%82-%E5%85%89%E9%87%8F%E5%AD%90-Photon/"/>
     
     
-    <category term="VMware" scheme="https://sapphirelin.github.io/tags/VMware/"/>
+    <category term="VMware" scheme="https://sapphirelin.com/tags/VMware/"/>
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/tags/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/tags/work-hack/"/>
     
-    <category term="ssh" scheme="https://sapphirelin.github.io/tags/ssh/"/>
+    <category term="ssh" scheme="https://sapphirelin.com/tags/ssh/"/>
     
-    <category term="password" scheme="https://sapphirelin.github.io/tags/password/"/>
+    <category term="password" scheme="https://sapphirelin.com/tags/password/"/>
     
-    <category term="Photon OS" scheme="https://sapphirelin.github.io/tags/Photon-OS/"/>
+    <category term="Photon OS" scheme="https://sapphirelin.com/tags/Photon-OS/"/>
     
   </entry>
   
   <entry>
     <title>升級 vSphere 7U2c &amp; 7U2d 後 VM Classes 欄位消失問題</title>
-    <link href="https://sapphirelin.github.io/20211007-%E5%8D%87%E7%B4%9A-vSphere-7U2c-7U2d-%E5%BE%8C-VM-Classes-%E6%AC%84%E4%BD%8D%E6%B6%88%E5%A4%B1%E5%95%8F%E9%A1%8C/"/>
-    <id>https://sapphirelin.github.io/20211007-%E5%8D%87%E7%B4%9A-vSphere-7U2c-7U2d-%E5%BE%8C-VM-Classes-%E6%AC%84%E4%BD%8D%E6%B6%88%E5%A4%B1%E5%95%8F%E9%A1%8C/</id>
+    <link href="https://sapphirelin.com/20211007-%E5%8D%87%E7%B4%9A-vSphere-7U2c-7U2d-%E5%BE%8C-VM-Classes-%E6%AC%84%E4%BD%8D%E6%B6%88%E5%A4%B1%E5%95%8F%E9%A1%8C/"/>
+    <id>https://sapphirelin.com/20211007-%E5%8D%87%E7%B4%9A-vSphere-7U2c-7U2d-%E5%BE%8C-VM-Classes-%E6%AC%84%E4%BD%8D%E6%B6%88%E5%A4%B1%E5%95%8F%E9%A1%8C/</id>
     <published>2021-10-07T01:49:21.000Z</published>
     <updated>2021-10-15T12:43:35.327Z</updated>
     
@@ -67,29 +67,29 @@
     
     
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/categories/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/categories/work-hack/"/>
     
-    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.github.io/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
+    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.com/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
     
     
-    <category term="VMware" scheme="https://sapphirelin.github.io/tags/VMware/"/>
+    <category term="VMware" scheme="https://sapphirelin.com/tags/VMware/"/>
     
-    <category term="Tanzu" scheme="https://sapphirelin.github.io/tags/Tanzu/"/>
+    <category term="Tanzu" scheme="https://sapphirelin.com/tags/Tanzu/"/>
     
-    <category term="vSphere with Tanzu" scheme="https://sapphirelin.github.io/tags/vSphere-with-Tanzu/"/>
+    <category term="vSphere with Tanzu" scheme="https://sapphirelin.com/tags/vSphere-with-Tanzu/"/>
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/tags/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/tags/work-hack/"/>
     
-    <category term="upgrade" scheme="https://sapphirelin.github.io/tags/upgrade/"/>
+    <category term="upgrade" scheme="https://sapphirelin.com/tags/upgrade/"/>
     
-    <category term="VM Class" scheme="https://sapphirelin.github.io/tags/VM-Class/"/>
+    <category term="VM Class" scheme="https://sapphirelin.com/tags/VM-Class/"/>
     
   </entry>
   
   <entry>
     <title>設定/修改 PhotonOS 的 hostname</title>
-    <link href="https://sapphirelin.github.io/20210727-%E6%94%B9-PhotonOS-%E7%9A%84-hostname/"/>
-    <id>https://sapphirelin.github.io/20210727-%E6%94%B9-PhotonOS-%E7%9A%84-hostname/</id>
+    <link href="https://sapphirelin.com/20210727-%E6%94%B9-PhotonOS-%E7%9A%84-hostname/"/>
+    <id>https://sapphirelin.com/20210727-%E6%94%B9-PhotonOS-%E7%9A%84-hostname/</id>
     <published>2021-07-27T02:08:32.000Z</published>
     <updated>2021-07-27T03:21:55.443Z</updated>
     
@@ -103,33 +103,33 @@
     
     
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/categories/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/categories/work-hack/"/>
     
-    <category term="φῶς 光量子  Photon" scheme="https://sapphirelin.github.io/categories/work-hack/%CF%86%E1%BF%B6%CF%82-%E5%85%89%E9%87%8F%E5%AD%90-Photon/"/>
+    <category term="φῶς 光量子  Photon" scheme="https://sapphirelin.com/categories/work-hack/%CF%86%E1%BF%B6%CF%82-%E5%85%89%E9%87%8F%E5%AD%90-Photon/"/>
     
     
-    <category term="VMware" scheme="https://sapphirelin.github.io/tags/VMware/"/>
+    <category term="VMware" scheme="https://sapphirelin.com/tags/VMware/"/>
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/tags/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/tags/work-hack/"/>
     
-    <category term="photonOS" scheme="https://sapphirelin.github.io/tags/photonOS/"/>
+    <category term="photonOS" scheme="https://sapphirelin.com/tags/photonOS/"/>
     
-    <category term="photon OS" scheme="https://sapphirelin.github.io/tags/photon-OS/"/>
+    <category term="photon OS" scheme="https://sapphirelin.com/tags/photon-OS/"/>
     
-    <category term="phôs" scheme="https://sapphirelin.github.io/tags/phos/"/>
+    <category term="phôs" scheme="https://sapphirelin.com/tags/phos/"/>
     
-    <category term="hostname" scheme="https://sapphirelin.github.io/tags/hostname/"/>
+    <category term="hostname" scheme="https://sapphirelin.com/tags/hostname/"/>
     
-    <category term="dns name" scheme="https://sapphirelin.github.io/tags/dns-name/"/>
+    <category term="dns name" scheme="https://sapphirelin.com/tags/dns-name/"/>
     
-    <category term="φῶς" scheme="https://sapphirelin.github.io/tags/%CF%86%E1%BF%B6%CF%82/"/>
+    <category term="φῶς" scheme="https://sapphirelin.com/tags/%CF%86%E1%BF%B6%CF%82/"/>
     
   </entry>
   
   <entry>
     <title>Photon OS 及其他作業系統憑證安裝總整理</title>
-    <link href="https://sapphirelin.github.io/20210724-Photon-OS-%E5%8F%8A%E5%85%B6%E4%BB%96%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/"/>
-    <id>https://sapphirelin.github.io/20210724-Photon-OS-%E5%8F%8A%E5%85%B6%E4%BB%96%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/</id>
+    <link href="https://sapphirelin.com/20210724-Photon-OS-%E5%8F%8A%E5%85%B6%E4%BB%96%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/"/>
+    <id>https://sapphirelin.com/20210724-Photon-OS-%E5%8F%8A%E5%85%B6%E4%BB%96%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/</id>
     <published>2021-07-23T16:00:18.000Z</published>
     <updated>2021-07-27T02:11:19.163Z</updated>
     
@@ -143,33 +143,33 @@
     
     
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/categories/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/categories/work-hack/"/>
     
-    <category term="φῶς 光量子  Photon" scheme="https://sapphirelin.github.io/categories/work-hack/%CF%86%E1%BF%B6%CF%82-%E5%85%89%E9%87%8F%E5%AD%90-Photon/"/>
+    <category term="φῶς 光量子  Photon" scheme="https://sapphirelin.com/categories/work-hack/%CF%86%E1%BF%B6%CF%82-%E5%85%89%E9%87%8F%E5%AD%90-Photon/"/>
     
     
-    <category term="VMware" scheme="https://sapphirelin.github.io/tags/VMware/"/>
+    <category term="VMware" scheme="https://sapphirelin.com/tags/VMware/"/>
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/tags/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/tags/work-hack/"/>
     
-    <category term="password" scheme="https://sapphirelin.github.io/tags/password/"/>
+    <category term="password" scheme="https://sapphirelin.com/tags/password/"/>
     
-    <category term="photonOS" scheme="https://sapphirelin.github.io/tags/photonOS/"/>
+    <category term="photonOS" scheme="https://sapphirelin.com/tags/photonOS/"/>
     
-    <category term="CA certification" scheme="https://sapphirelin.github.io/tags/CA-certification/"/>
+    <category term="CA certification" scheme="https://sapphirelin.com/tags/CA-certification/"/>
     
-    <category term="photon OS" scheme="https://sapphirelin.github.io/tags/photon-OS/"/>
+    <category term="photon OS" scheme="https://sapphirelin.com/tags/photon-OS/"/>
     
-    <category term="phôs" scheme="https://sapphirelin.github.io/tags/phos/"/>
+    <category term="phôs" scheme="https://sapphirelin.com/tags/phos/"/>
     
-    <category term="φῶς" scheme="https://sapphirelin.github.io/tags/%CF%86%E1%BF%B6%CF%82/"/>
+    <category term="φῶς" scheme="https://sapphirelin.com/tags/%CF%86%E1%BF%B6%CF%82/"/>
     
   </entry>
   
   <entry>
     <title>無法部署 TKC 解法 | Content Libary 憑證置換</title>
-    <link href="https://sapphirelin.github.io/20210723-%E7%84%A1%E6%B3%95%E9%83%A8%E7%BD%B2-TKC-%E8%A7%A3%E6%B3%95-Content-Libary-%E6%86%91%E8%AD%89%E7%BD%AE%E6%8F%9B/"/>
-    <id>https://sapphirelin.github.io/20210723-%E7%84%A1%E6%B3%95%E9%83%A8%E7%BD%B2-TKC-%E8%A7%A3%E6%B3%95-Content-Libary-%E6%86%91%E8%AD%89%E7%BD%AE%E6%8F%9B/</id>
+    <link href="https://sapphirelin.com/20210723-%E7%84%A1%E6%B3%95%E9%83%A8%E7%BD%B2-TKC-%E8%A7%A3%E6%B3%95-Content-Libary-%E6%86%91%E8%AD%89%E7%BD%AE%E6%8F%9B/"/>
+    <id>https://sapphirelin.com/20210723-%E7%84%A1%E6%B3%95%E9%83%A8%E7%BD%B2-TKC-%E8%A7%A3%E6%B3%95-Content-Libary-%E6%86%91%E8%AD%89%E7%BD%AE%E6%8F%9B/</id>
     <published>2021-07-23T15:53:55.000Z</published>
     <updated>2021-07-23T17:05:59.884Z</updated>
     
@@ -183,29 +183,29 @@
     
     
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/categories/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/categories/work-hack/"/>
     
-    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.github.io/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
+    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.com/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
     
     
-    <category term="VMware" scheme="https://sapphirelin.github.io/tags/VMware/"/>
+    <category term="VMware" scheme="https://sapphirelin.com/tags/VMware/"/>
     
-    <category term="Tanzu" scheme="https://sapphirelin.github.io/tags/Tanzu/"/>
+    <category term="Tanzu" scheme="https://sapphirelin.com/tags/Tanzu/"/>
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/tags/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/tags/work-hack/"/>
     
-    <category term="ssh" scheme="https://sapphirelin.github.io/tags/ssh/"/>
+    <category term="ssh" scheme="https://sapphirelin.com/tags/ssh/"/>
     
-    <category term="troubleshooting" scheme="https://sapphirelin.github.io/tags/troubleshooting/"/>
+    <category term="troubleshooting" scheme="https://sapphirelin.com/tags/troubleshooting/"/>
     
-    <category term="ssl thumbprint" scheme="https://sapphirelin.github.io/tags/ssl-thumbprint/"/>
+    <category term="ssl thumbprint" scheme="https://sapphirelin.com/tags/ssl-thumbprint/"/>
     
   </entry>
   
   <entry>
     <title>TKC 使用不同 Harbor 憑證方式 | 私倉(harbor)的權限隔離</title>
-    <link href="https://sapphirelin.github.io/20210719-TKC-%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%90%8C-Harbor-%E6%86%91%E8%AD%89%E6%96%B9%E5%BC%8F-%E7%A7%81%E5%80%89-harbor-%E7%9A%84%E6%AC%8A%E9%99%90%E9%9A%94%E9%9B%A2/"/>
-    <id>https://sapphirelin.github.io/20210719-TKC-%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%90%8C-Harbor-%E6%86%91%E8%AD%89%E6%96%B9%E5%BC%8F-%E7%A7%81%E5%80%89-harbor-%E7%9A%84%E6%AC%8A%E9%99%90%E9%9A%94%E9%9B%A2/</id>
+    <link href="https://sapphirelin.com/20210719-TKC-%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%90%8C-Harbor-%E6%86%91%E8%AD%89%E6%96%B9%E5%BC%8F-%E7%A7%81%E5%80%89-harbor-%E7%9A%84%E6%AC%8A%E9%99%90%E9%9A%94%E9%9B%A2/"/>
+    <id>https://sapphirelin.com/20210719-TKC-%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%90%8C-Harbor-%E6%86%91%E8%AD%89%E6%96%B9%E5%BC%8F-%E7%A7%81%E5%80%89-harbor-%E7%9A%84%E6%AC%8A%E9%99%90%E9%9A%94%E9%9B%A2/</id>
     <published>2021-07-19T11:12:11.000Z</published>
     <updated>2021-08-24T02:43:43.594Z</updated>
     
@@ -219,29 +219,29 @@
     
     
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/categories/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/categories/work-hack/"/>
     
-    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.github.io/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
+    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.com/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
     
     
-    <category term="VMware" scheme="https://sapphirelin.github.io/tags/VMware/"/>
+    <category term="VMware" scheme="https://sapphirelin.com/tags/VMware/"/>
     
-    <category term="Tanzu" scheme="https://sapphirelin.github.io/tags/Tanzu/"/>
+    <category term="Tanzu" scheme="https://sapphirelin.com/tags/Tanzu/"/>
     
-    <category term="harbor" scheme="https://sapphirelin.github.io/tags/harbor/"/>
+    <category term="harbor" scheme="https://sapphirelin.com/tags/harbor/"/>
     
-    <category term="repository" scheme="https://sapphirelin.github.io/tags/repository/"/>
+    <category term="repository" scheme="https://sapphirelin.com/tags/repository/"/>
     
-    <category term="cert" scheme="https://sapphirelin.github.io/tags/cert/"/>
+    <category term="cert" scheme="https://sapphirelin.com/tags/cert/"/>
     
-    <category term="vSphere with Tanzu" scheme="https://sapphirelin.github.io/tags/vSphere-with-Tanzu/"/>
+    <category term="vSphere with Tanzu" scheme="https://sapphirelin.com/tags/vSphere-with-Tanzu/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 常用指令</title>
-    <link href="https://sapphirelin.github.io/20210718-Hexo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4-Hexo-%E7%B6%B2%E7%AB%99%E7%A7%98%E7%AC%88/"/>
-    <id>https://sapphirelin.github.io/20210718-Hexo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4-Hexo-%E7%B6%B2%E7%AB%99%E7%A7%98%E7%AC%88/</id>
+    <link href="https://sapphirelin.com/20210718-Hexo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4-Hexo-%E7%B6%B2%E7%AB%99%E7%A7%98%E7%AC%88/"/>
+    <id>https://sapphirelin.com/20210718-Hexo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4-Hexo-%E7%B6%B2%E7%AB%99%E7%A7%98%E7%AC%88/</id>
     <published>2021-07-18T09:21:24.000Z</published>
     <updated>2021-07-23T16:00:58.742Z</updated>
     
@@ -257,21 +257,21 @@
     
     
     
-    <category term="life hack" scheme="https://sapphirelin.github.io/categories/life-hack/"/>
+    <category term="life hack" scheme="https://sapphirelin.com/categories/life-hack/"/>
     
-    <category term="架站紀錄" scheme="https://sapphirelin.github.io/categories/life-hack/%E6%9E%B6%E7%AB%99%E7%B4%80%E9%8C%84/"/>
+    <category term="架站紀錄" scheme="https://sapphirelin.com/categories/life-hack/%E6%9E%B6%E7%AB%99%E7%B4%80%E9%8C%84/"/>
     
     
-    <category term="hexo" scheme="https://sapphirelin.github.io/tags/hexo/"/>
+    <category term="hexo" scheme="https://sapphirelin.com/tags/hexo/"/>
     
-    <category term="personal website" scheme="https://sapphirelin.github.io/tags/personal-website/"/>
+    <category term="personal website" scheme="https://sapphirelin.com/tags/personal-website/"/>
     
   </entry>
   
   <entry>
     <title>從零開始 10分鐘建好 github + hexo 個人網站</title>
-    <link href="https://sapphirelin.github.io/20210717-%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-10%E5%88%86%E9%90%98%E5%BB%BA%E5%A5%BD-github-hexo-%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/"/>
-    <id>https://sapphirelin.github.io/20210717-%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-10%E5%88%86%E9%90%98%E5%BB%BA%E5%A5%BD-github-hexo-%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/</id>
+    <link href="https://sapphirelin.com/20210717-%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-10%E5%88%86%E9%90%98%E5%BB%BA%E5%A5%BD-github-hexo-%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/"/>
+    <id>https://sapphirelin.com/20210717-%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-10%E5%88%86%E9%90%98%E5%BB%BA%E5%A5%BD-github-hexo-%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/</id>
     <published>2021-07-17T14:28:44.000Z</published>
     <updated>2021-07-23T14:47:57.251Z</updated>
     
@@ -286,23 +286,23 @@
     
     
     
-    <category term="life hack" scheme="https://sapphirelin.github.io/categories/life-hack/"/>
+    <category term="life hack" scheme="https://sapphirelin.com/categories/life-hack/"/>
     
-    <category term="架站紀錄" scheme="https://sapphirelin.github.io/categories/life-hack/%E6%9E%B6%E7%AB%99%E7%B4%80%E9%8C%84/"/>
+    <category term="架站紀錄" scheme="https://sapphirelin.com/categories/life-hack/%E6%9E%B6%E7%AB%99%E7%B4%80%E9%8C%84/"/>
     
     
-    <category term="hexo" scheme="https://sapphirelin.github.io/tags/hexo/"/>
+    <category term="hexo" scheme="https://sapphirelin.com/tags/hexo/"/>
     
-    <category term="personal website" scheme="https://sapphirelin.github.io/tags/personal-website/"/>
+    <category term="personal website" scheme="https://sapphirelin.com/tags/personal-website/"/>
     
-    <category term="快速建站" scheme="https://sapphirelin.github.io/tags/%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%99/"/>
+    <category term="快速建站" scheme="https://sapphirelin.com/tags/%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
   <entry>
     <title>正式搬家</title>
-    <link href="https://sapphirelin.github.io/20210717-%E6%AD%A3%E5%BC%8F%E6%90%AC%E5%AE%B6/"/>
-    <id>https://sapphirelin.github.io/20210717-%E6%AD%A3%E5%BC%8F%E6%90%AC%E5%AE%B6/</id>
+    <link href="https://sapphirelin.com/20210717-%E6%AD%A3%E5%BC%8F%E6%90%AC%E5%AE%B6/"/>
+    <id>https://sapphirelin.com/20210717-%E6%AD%A3%E5%BC%8F%E6%90%AC%E5%AE%B6/</id>
     <published>2021-07-17T12:21:10.000Z</published>
     <updated>2021-07-17T17:07:40.209Z</updated>
     
@@ -317,19 +317,19 @@
     
     
     
-    <category term="life hack" scheme="https://sapphirelin.github.io/categories/life-hack/"/>
+    <category term="life hack" scheme="https://sapphirelin.com/categories/life-hack/"/>
     
-    <category term="架站紀錄" scheme="https://sapphirelin.github.io/categories/life-hack/%E6%9E%B6%E7%AB%99%E7%B4%80%E9%8C%84/"/>
+    <category term="架站紀錄" scheme="https://sapphirelin.com/categories/life-hack/%E6%9E%B6%E7%AB%99%E7%B4%80%E9%8C%84/"/>
     
     
-    <category term="狡兔三窟" scheme="https://sapphirelin.github.io/tags/%E7%8B%A1%E5%85%94%E4%B8%89%E7%AA%9F/"/>
+    <category term="狡兔三窟" scheme="https://sapphirelin.com/tags/%E7%8B%A1%E5%85%94%E4%B8%89%E7%AA%9F/"/>
     
   </entry>
   
   <entry>
     <title>Tanzu 鏡像倉庫憑證安裝法</title>
-    <link href="https://sapphirelin.github.io/20210716-Tanzu-%E9%8F%A1%E5%83%8F%E5%80%89%E5%BA%AB%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/"/>
-    <id>https://sapphirelin.github.io/20210716-Tanzu-%E9%8F%A1%E5%83%8F%E5%80%89%E5%BA%AB%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/</id>
+    <link href="https://sapphirelin.com/20210716-Tanzu-%E9%8F%A1%E5%83%8F%E5%80%89%E5%BA%AB%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/"/>
+    <id>https://sapphirelin.com/20210716-Tanzu-%E9%8F%A1%E5%83%8F%E5%80%89%E5%BA%AB%E6%86%91%E8%AD%89%E5%AE%89%E8%A3%9D%E6%B3%95/</id>
     <published>2021-07-16T11:12:11.000Z</published>
     <updated>2021-07-21T10:50:14.289Z</updated>
     
@@ -343,29 +343,29 @@
     
     
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/categories/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/categories/work-hack/"/>
     
-    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.github.io/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
+    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.com/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
     
     
-    <category term="VMware" scheme="https://sapphirelin.github.io/tags/VMware/"/>
+    <category term="VMware" scheme="https://sapphirelin.com/tags/VMware/"/>
     
-    <category term="Tanzu" scheme="https://sapphirelin.github.io/tags/Tanzu/"/>
+    <category term="Tanzu" scheme="https://sapphirelin.com/tags/Tanzu/"/>
     
-    <category term="harbor" scheme="https://sapphirelin.github.io/tags/harbor/"/>
+    <category term="harbor" scheme="https://sapphirelin.com/tags/harbor/"/>
     
-    <category term="repository" scheme="https://sapphirelin.github.io/tags/repository/"/>
+    <category term="repository" scheme="https://sapphirelin.com/tags/repository/"/>
     
-    <category term="cert" scheme="https://sapphirelin.github.io/tags/cert/"/>
+    <category term="cert" scheme="https://sapphirelin.com/tags/cert/"/>
     
-    <category term="vSphere with Tanzu" scheme="https://sapphirelin.github.io/tags/vSphere-with-Tanzu/"/>
+    <category term="vSphere with Tanzu" scheme="https://sapphirelin.com/tags/vSphere-with-Tanzu/"/>
     
   </entry>
   
   <entry>
     <title>最速登入Tanzu guest cluster node 方法 | 進去 TKC 節點</title>
-    <link href="https://sapphirelin.github.io/20210713-%E6%9C%80%E9%80%9F%E7%99%BB%E5%85%A5Tanzu-guest-cluster-node-%E6%96%B9%E6%B3%95-%E9%80%B2%E5%8E%BB-TKC-%E7%AF%80%E9%BB%9E/"/>
-    <id>https://sapphirelin.github.io/20210713-%E6%9C%80%E9%80%9F%E7%99%BB%E5%85%A5Tanzu-guest-cluster-node-%E6%96%B9%E6%B3%95-%E9%80%B2%E5%8E%BB-TKC-%E7%AF%80%E9%BB%9E/</id>
+    <link href="https://sapphirelin.com/20210713-%E6%9C%80%E9%80%9F%E7%99%BB%E5%85%A5Tanzu-guest-cluster-node-%E6%96%B9%E6%B3%95-%E9%80%B2%E5%8E%BB-TKC-%E7%AF%80%E9%BB%9E/"/>
+    <id>https://sapphirelin.com/20210713-%E6%9C%80%E9%80%9F%E7%99%BB%E5%85%A5Tanzu-guest-cluster-node-%E6%96%B9%E6%B3%95-%E9%80%B2%E5%8E%BB-TKC-%E7%AF%80%E9%BB%9E/</id>
     <published>2021-07-12T16:00:00.000Z</published>
     <updated>2021-07-21T10:49:22.896Z</updated>
     
@@ -380,27 +380,27 @@
     
     
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/categories/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/categories/work-hack/"/>
     
-    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.github.io/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
+    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.com/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
     
     
-    <category term="VMware" scheme="https://sapphirelin.github.io/tags/VMware/"/>
+    <category term="VMware" scheme="https://sapphirelin.com/tags/VMware/"/>
     
-    <category term="Tanzu" scheme="https://sapphirelin.github.io/tags/Tanzu/"/>
+    <category term="Tanzu" scheme="https://sapphirelin.com/tags/Tanzu/"/>
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/tags/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/tags/work-hack/"/>
     
-    <category term="ssh" scheme="https://sapphirelin.github.io/tags/ssh/"/>
+    <category term="ssh" scheme="https://sapphirelin.com/tags/ssh/"/>
     
-    <category term="password" scheme="https://sapphirelin.github.io/tags/password/"/>
+    <category term="password" scheme="https://sapphirelin.com/tags/password/"/>
     
   </entry>
   
   <entry>
     <title>VMware SSO Solutions: 實作客製化單一登入 VDI</title>
-    <link href="https://sapphirelin.github.io/20210630-VMware-SSO-Solutions-%E5%AF%A6%E4%BD%9C%E5%AE%A2%E8%A3%BD%E5%8C%96%E5%96%AE%E4%B8%80%E7%99%BB%E5%85%A5-VDI/"/>
-    <id>https://sapphirelin.github.io/20210630-VMware-SSO-Solutions-%E5%AF%A6%E4%BD%9C%E5%AE%A2%E8%A3%BD%E5%8C%96%E5%96%AE%E4%B8%80%E7%99%BB%E5%85%A5-VDI/</id>
+    <link href="https://sapphirelin.com/20210630-VMware-SSO-Solutions-%E5%AF%A6%E4%BD%9C%E5%AE%A2%E8%A3%BD%E5%8C%96%E5%96%AE%E4%B8%80%E7%99%BB%E5%85%A5-VDI/"/>
+    <id>https://sapphirelin.com/20210630-VMware-SSO-Solutions-%E5%AF%A6%E4%BD%9C%E5%AE%A2%E8%A3%BD%E5%8C%96%E5%96%AE%E4%B8%80%E7%99%BB%E5%85%A5-VDI/</id>
     <published>2021-06-29T16:00:00.000Z</published>
     <updated>2021-07-27T03:56:17.587Z</updated>
     
@@ -415,22 +415,22 @@
     
     
     
-    <category term="work hack" scheme="https://sapphirelin.github.io/categories/work-hack/"/>
+    <category term="work hack" scheme="https://sapphirelin.com/categories/work-hack/"/>
     
-    <category term="單一登入 SSO" scheme="https://sapphirelin.github.io/categories/work-hack/%E5%96%AE%E4%B8%80%E7%99%BB%E5%85%A5-SSO/"/>
+    <category term="單一登入 SSO" scheme="https://sapphirelin.com/categories/work-hack/%E5%96%AE%E4%B8%80%E7%99%BB%E5%85%A5-SSO/"/>
     
     
-    <category term="VMware" scheme="https://sapphirelin.github.io/tags/VMware/"/>
+    <category term="VMware" scheme="https://sapphirelin.com/tags/VMware/"/>
     
-    <category term="Workspace ONE" scheme="https://sapphirelin.github.io/tags/Workspace-ONE/"/>
+    <category term="Workspace ONE" scheme="https://sapphirelin.com/tags/Workspace-ONE/"/>
     
-    <category term="EUC" scheme="https://sapphirelin.github.io/tags/EUC/"/>
+    <category term="EUC" scheme="https://sapphirelin.com/tags/EUC/"/>
     
-    <category term="VDI" scheme="https://sapphirelin.github.io/tags/VDI/"/>
+    <category term="VDI" scheme="https://sapphirelin.com/tags/VDI/"/>
     
-    <category term="SSO" scheme="https://sapphirelin.github.io/tags/SSO/"/>
+    <category term="SSO" scheme="https://sapphirelin.com/tags/SSO/"/>
     
-    <category term="UEM" scheme="https://sapphirelin.github.io/tags/UEM/"/>
+    <category term="UEM" scheme="https://sapphirelin.com/tags/UEM/"/>
     
   </entry>
   
