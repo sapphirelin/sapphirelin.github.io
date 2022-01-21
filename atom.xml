@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Sapphire Blog</title>
+  <title>Sapphire‘s Work Hack Blog</title>
   
-  <subtitle>Personal hack notes by Sapphire</subtitle>
+  <subtitle>Personal notes by Sapphire Lin</subtitle>
   <link href="https://sapphirelin.com/atom.xml" rel="self"/>
   
   <link href="https://sapphirelin.com/"/>
