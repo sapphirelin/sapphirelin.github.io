@@ -6,7 +6,7 @@
   <link href="https://sapphirelin.com/atom.xml" rel="self"/>
   
   <link href="https://sapphirelin.com/"/>
-  <updated>2021-10-15T12:33:30.787Z</updated>
+  <updated>2022-01-24T09:08:53.032Z</updated>
   <id>https://sapphirelin.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>考完證照後蘋果電腦壞掉的解法 | Pearson OnVUE 弄壞我的 Mac 啦啊啊啊</title>
+    <link href="https://sapphirelin.com/20220123-%E8%80%83%E5%AE%8C%E8%AD%89%E7%85%A7%E5%BE%8C%E8%98%8B%E6%9E%9C%E9%9B%BB%E8%85%A6%E5%A3%9E%E6%8E%89%E7%9A%84%E8%A7%A3%E6%B3%95-Pearson-OnVUE-%E5%BC%84%E5%A3%9E%E6%88%91%E7%9A%84=Mac-%E5%95%A6%E5%95%8A%E5%95%8A%E5%95%8A/"/>
+    <id>https://sapphirelin.com/20220123-%E8%80%83%E5%AE%8C%E8%AD%89%E7%85%A7%E5%BE%8C%E8%98%8B%E6%9E%9C%E9%9B%BB%E8%85%A6%E5%A3%9E%E6%8E%89%E7%9A%84%E8%A7%A3%E6%B3%95-Pearson-OnVUE-%E5%BC%84%E5%A3%9E%E6%88%91%E7%9A%84=Mac-%E5%95%A6%E5%95%8A%E5%95%8A%E5%95%8A/</id>
+    <published>2022-01-23T01:51:13.000Z</published>
+    <updated>2022-01-24T09:08:53.032Z</updated>
+    
+    <content type="html"><![CDATA[<p>After the online test by PearsonVue, I cannot call my Mission Control (MacBook).<br>Un-installed the OnVue app which is used by the test still doesn’t work. (ﾟ皿ﾟﾒ)</p><p>其實我已經忍耐好幾個月，後來終於有空跟去 Apple store 原廠請他看看是怎麼回事。<br>那天的發現只有這個不是硬體問題、是軟體問題，總之資料要搬不就等於重灌…我就乾脆重灌了。<br>但當我考到下一張證照的時候，悲劇再次發生….. </p><p><strong>我 可 不 要 再 重 灌</strong></p><p>用證照換取電腦重灌真的很不划算，這台可是我的優秀 lab 機，我隨時就要拿來用 !!!</p><p>尋尋覓覓我終於找到一位<a href="https://medium.com/@oluwasegunadepoju/macs-mission-control-disabled-after-using-the-onvue-application-604e75e3dd8a">大大</a>遇到相同問題然後有解了：</p><p>（本篇於2021年3月實作）</p><h3 id="原因"><a href="#原因" class="headerlink" title="/ 原因 /"></a>/ 原因 /</h3><p><code>$ defaults read com.apple.dock mcx-expose-disabled</code></p><h3 id="解法"><a href="#解法" class="headerlink" title="/ 解法 /"></a>/ 解法 /</h3><p>到 Terminal 下這兩條指令就好囉：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ defaults delete com.apple.dock mcx-expose-disabled</span><br><span class="line">$ killall Dock</span><br></pre></td></tr></table></figure><p>DO RE MI SO  (*´∀`)~♥</p><p>Macbook 上滑終於又出現 Misson Control… 我的 Finder 終於沒有壞掉了</p><hr><p>後續同年 7 月底我同樣利用 PearsonVue 考試，我蘋果電腦的指揮中心(Mission Control) 就沒有再持續出問題了。<br>分享給同樣遇到大家，一起怒考證照!</p><p>Tschüss! (ﾉ&gt;ω&lt;)ﾉ</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;After the online test by PearsonVue, I cannot call my Mission Control (MacBook).&lt;br&gt;Un-installed the OnVue app which is used by the test </summary>
+      
+    
+    
+    
+    <category term="life hack" scheme="https://sapphirelin.com/categories/life-hack/"/>
+    
+    <category term="工程師人生" scheme="https://sapphirelin.com/categories/life-hack/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E4%BA%BA%E7%94%9F/"/>
+    
+    
+    <category term="life hack" scheme="https://sapphirelin.com/tags/life-hack/"/>
+    
+    <category term="Pearson" scheme="https://sapphirelin.com/tags/Pearson/"/>
+    
+    <category term="OnVUE" scheme="https://sapphirelin.com/tags/OnVUE/"/>
+    
+    <category term="Certification" scheme="https://sapphirelin.com/tags/Certification/"/>
+    
+  </entry>
   
   <entry>
     <title>安裝地端私倉 harbor 2.3 到 photon OS VM</title>
