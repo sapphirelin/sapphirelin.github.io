@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sapphirelin.com/20220308-%E7%B0%A1%E5%96%AE%E7%8E%A9%E7%8E%A9%E7%9C%8B-VMware-Application-Catalog-%EF%BC%88%E4%BB%A5%E5%89%8D%E5%8F%AB-Tanzu-Application-Catalog%EF%BC%89/</loc>
+    
+    <lastmod>2022-03-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sapphirelin.com/20220222-TKG-v1-5-%E5%A4%A7%E6%9B%B4%E6%96%B0-what-s-new-%E9%87%8D%E9%BB%9E%E6%95%B4%E7%90%86/</loc>
     
     <lastmod>2022-02-23</lastmod>
@@ -202,7 +211,7 @@
 
   <url>
     <loc>https://sapphirelin.com/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -210,266 +219,301 @@
   
   <url>
     <loc>https://sapphirelin.com/tags/%E7%8B%A1%E5%85%94%E4%B8%89%E7%AA%9F/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/hexo/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/personal-website/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/VMware/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/Workspace-ONE/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/EUC/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/VDI/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/SSO/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/UEM/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/Tanzu/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/harbor/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/repository/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/cert/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/vSphere-with-Tanzu/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/work-hack/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/ssh/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/password/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/photonOS/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/CA-certification/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/troubleshooting/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/ssl-thumbprint/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/photon-OS/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/phos/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/hostname/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/dns-name/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/%CF%86%E1%BF%B6%CF%82/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/upgrade/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/VM-Class/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/Photon-OS/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/life-hack/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/Pearson/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/OnVUE/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/Certification/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/tkg/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/Tanzu-Kubernetes-Grid/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/tkgm/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/tags/Cloud-Native/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/VMware-Application-Catalog/</loc>
+    <lastmod>2022-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/Tanzu-Application-Catalog/</loc>
+    <lastmod>2022-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/TAC/</loc>
+    <lastmod>2022-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/kubeapps/</loc>
+    <lastmod>2022-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/Application-Catalog/</loc>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -478,49 +522,49 @@
   
   <url>
     <loc>https://sapphirelin.com/categories/life-hack/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/categories/life-hack/%E6%9E%B6%E7%AB%99%E7%B4%80%E9%8C%84/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/categories/work-hack/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/categories/work-hack/%CF%86%E1%BF%B6%CF%82-%E5%85%89%E9%87%8F%E5%AD%90-Photon/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/categories/work-hack/%E5%96%AE%E4%B8%80%E7%99%BB%E5%85%A5-SSO/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sapphirelin.com/categories/life-hack/%E5%B7%A5%E7%A8%8B%E5%B8%AB%E4%BA%BA%E7%94%9F/</loc>
-    <lastmod>2022-02-23</lastmod>
+    <lastmod>2022-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

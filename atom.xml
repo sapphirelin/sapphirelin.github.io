@@ -6,7 +6,7 @@
   <link href="https://sapphirelin.com/atom.xml" rel="self"/>
   
   <link href="https://sapphirelin.com/"/>
-  <updated>2022-02-23T05:06:42.528Z</updated>
+  <updated>2022-03-08T12:23:23.241Z</updated>
   <id>https://sapphirelin.com/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>簡單玩玩看 VMware Application Catalog （以前叫 Tanzu Application Catalog）</title>
+    <link href="https://sapphirelin.com/20220308-%E7%B0%A1%E5%96%AE%E7%8E%A9%E7%8E%A9%E7%9C%8B-VMware-Application-Catalog-%EF%BC%88%E4%BB%A5%E5%89%8D%E5%8F%AB-Tanzu-Application-Catalog%EF%BC%89/"/>
+    <id>https://sapphirelin.com/20220308-%E7%B0%A1%E5%96%AE%E7%8E%A9%E7%8E%A9%E7%9C%8B-VMware-Application-Catalog-%EF%BC%88%E4%BB%A5%E5%89%8D%E5%8F%AB-Tanzu-Application-Catalog%EF%BC%89/</id>
+    <published>2022-03-08T11:46:32.000Z</published>
+    <updated>2022-03-08T12:23:23.241Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文就是玩玩看：<br><a href="https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tac-docs/GUID-get-started-get-started-tanzu-application-catalog.html">https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tac-docs/GUID-get-started-get-started-tanzu-application-catalog.html</a></p><p>相信很多人不太清楚這個是什麼，能用在哪裡？後面會有簡單解釋說明以及讓大家來看看這個平台的基本操作。</p><h2 id="什麼是-VAC-TAC"><a href="#什麼是-VAC-TAC" class="headerlink" title="/ 什麼是 VAC(TAC) /"></a>/ 什麼是 VAC(TAC) /</h2><p>VMware 應用程序目錄 (VAC) 是來自 Bitnami 集合的可自定義選擇的開源軟件，該軟件持續維護並經過驗證測試，可在生產環境中使用。 VMware Application Catalog 為開發人員提供了預打包的自助應用程序和組件的生產力和敏捷性，同時使運營商能夠滿足企業 IT 嚴格的安全性和透明度要求。</p><p>簡單來說就是你可以用它來管理你自己的  base image 或是現在活在 VMware Bitnami team 在維護的那些 open source<br>最後的呈現可以是單獨的 containers 或一組 Helm charts<br><img src="https://i.imgur.com/hwIFjob.png"></p><p>目前來說（2022年3月）相關 artifacts 的發佈都是丟在 Google Container Registry (GCR) ，要使用的話當然就是下載到自己 OCI-compliant 的映像倉庫來使用了，如 Docker Hub, Harbor, Artifactory。<br>不用多說，企業使用一律建議是都建一個私有倉庫如 Harbor ，並且放在防火牆裡面。</p><h2 id="基本操作-amp-常用功能"><a href="#基本操作-amp-常用功能" class="headerlink" title="/ 基本操作 &amp; 常用功能 /"></a>/ 基本操作 &amp; 常用功能 /</h2><h3 id="1-登入TAC"><a href="#1-登入TAC" class="headerlink" title="1. 登入TAC"></a>1. 登入TAC</h3><p>Portal 網址：<a href="https://tac.bitnami.com/">https://tac.bitnami.com/</a><br>（會讓你使用 VMware 的 Cloud Service Account 來登入 aka 利用 MyVMware 登入的另一平台）<br><img src="https://i.imgur.com/k0iwpZ7.png"></p><h3 id="2-儀表板查看"><a href="#2-儀表板查看" class="headerlink" title="2. 儀表板查看"></a>2. 儀表板查看</h3><p>輸入帳號密碼登入後，會出現所有你擁有的 container images 和 Helm charts。</p><blockquote><p>portal 上只會列出你有購買的 applications and building blocks。<br>當然如果你的公司有採購 Tanzu Advanced 的話，就是全部都有啦～不過是 by Core by 年訂閱（2021.08 的情況）</p></blockquote><h4 id="名詞介紹"><a href="#名詞介紹" class="headerlink" title="名詞介紹"></a>名詞介紹</h4><blockquote><p>在對 end-user 的軟體交付中的單位稱為 Application Artifacts ，簡稱 AA。</p></blockquote><p><img src="https://i.imgur.com/1xbVlHE.png"></p><blockquote><p>TAC 裡面的AA 有可能是一組 helm chart (好幾個containers) 如上，或是單個 Container image 如下</p></blockquote><p><img src="https://i.imgur.com/ZVwHjQs.png"></p><h2 id="實務上常會要看的指標"><a href="#實務上常會要看的指標" class="headerlink" title="/ 實務上常會要看的指標 /"></a>/ 實務上常會要看的指標 /</h2><p>來源：(Digest)看這個image 的倉庫是存放在哪裡<br>版本：(tags)</p><p>這兩者不用說，上面我有提到目前丟在哪裡，而且版本也可以直接透過 VAC(TAC) 介面查看，更重要的是這個：</p><p><img src="https://i.imgur.com/vw5Izj9.png"></p><p>基本上這張圖所列的範圍大概就是平台最重要的功能，我們開發企業應用，要通過相關機構的稽查，最方便的就是在這邊去看我相關 AA 的詳細安全報告了，包含： 測試結果(test result) 、弱掃報告：(CVE Scan Result) 看這個package 裡頭有沒有已知的安全性漏洞等等可以下載、防毒報告：(Antivirus Scan) 等等</p><h2 id="部署一個被-TAC-安全認證過的應用程式-以-wordpress-為例"><a href="#部署一個被-TAC-安全認證過的應用程式-以-wordpress-為例" class="headerlink" title="/ 部署一個被 TAC 安全認證過的應用程式- 以 wordpress 為例 /"></a>/ 部署一個被 TAC 安全認證過的應用程式- 以 wordpress 為例 /</h2><h3 id="1-保持-helm-健康，like-apt-update"><a href="#1-保持-helm-健康，like-apt-update" class="headerlink" title="1. 保持 helm 健康，like apt update"></a>1. 保持 helm 健康，like apt update</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">helm repo update</span><br></pre></td></tr></table></figure><ol start="2"><li>由於作者我是先用魔法網路，拉 image 到我的 harbor 了，直接指定該 project 然後開始安裝 wordpress<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ helm install tac-maria tac-repo/mariadb --set auth.username=admin_wordpress --set auth.password=VMware1! --set auth.database=wp_database</span><br><span class="line">$ helm install tac-wp tac-repo/wordpress --set mariadb.enabled=false --set externalDatabase.host=tac-maria-mariadb.default.svc.cluster.local --set externalDatabase.user=admin_wordpress  --set externalDatabase.password=VMware1! --set externalDatabase.database=wp_database</span><br></pre></td></tr></table></figure></li></ol><p><img src="https://i.imgur.com/yw7E0tC.png"><br><img src="https://i.imgur.com/R4i8vtT.png"></p><p><img src="https://i.imgur.com/JDIcOsf.png"></p><p>登進去後臺寫點東西，登去後台只要在網址後面加 /admin：<br><img src="https://i.imgur.com/fAQbpoU.png"><br>帳號是 user, 密碼這樣拿：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl get secret --namespace default tac-wp-wordpress -o jsonpath=&quot;&#123;.data.wordpress-password&#125;&quot; | base64 -d &amp;&amp; echo</span><br></pre></td></tr></table></figure><h4 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h4><p><img src="https://i.imgur.com/ZA925eV.png"></p><p>完全就跟之前部署 application 一樣的體驗，重點是來源端是被驗證的，所以映像檔倉庫非常非常重要喔！</p><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="建議最佳整合使用-kubeapps"><a href="#建議最佳整合使用-kubeapps" class="headerlink" title="/ 建議最佳整合使用 kubeapps /"></a>/ 建議最佳整合使用 kubeapps /</h2><p>Kubeapps 是一個最容易方便部署應用到 k8s cluster 裡頭的一個 web-UI 工具，介面也非常直覺，容易管理你所擁有的應用，詳細可參考官網： kubeapps：<a href="https://kubeapps.com/">https://kubeapps.com/</a></p><p>都同樣是 Bitnami 出產，TAC 裡面當然也有 kubeapps 可以下載囉！<br>同樣省略連魔法網路下載到自己私倉那段，以下是我安裝使用 kubeapps 的紀錄</p><h3 id="安裝kubeapps"><a href="#安裝kubeapps" class="headerlink" title="安裝kubeapps"></a>安裝kubeapps</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ helm install kubeapps tac-repo/kubeapps --set useHelm3=true --set frontend.service.type=LoadBalancer --wait</span><br><span class="line">$  kubectl get svc kubeapps</span><br></pre></td></tr></table></figure><p><img src="https://i.imgur.com/Uwdd6Fo.png"></p><h3 id="拿token登入"><a href="#拿token登入" class="headerlink" title="拿token登入"></a>拿token登入</h3><h4 id="新增帳號，做-role-binding"><a href="#新增帳號，做-role-binding" class="headerlink" title="新增帳號，做 role binding"></a>新增帳號，做 role binding</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl create serviceaccount kubeapps-operator</span><br><span class="line">$ kubectl create clusterrolebinding kubeapps-operator --clusterrole=cluster-admin --serviceaccount=default:kubeapps-operator</span><br></pre></td></tr></table></figure><h4 id="解碼token"><a href="#解碼token" class="headerlink" title="解碼token"></a>解碼token</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl get secret $(kubectl get serviceaccount kubeapps-operator -o jsonpath=&#x27;&#123;range .secrets[*]&#125;&#123;.name&#125;&#123;&quot;\n&quot;&#125;&#123;end&#125;&#x27; | grep kubeapps-operator-token) -o jsonpath=&#x27;&#123;.data.token&#125;&#x27; -o go-template=&#x27;&#123;&#123;.data.token | base64decode&#125;&#125;&#x27; &amp;&amp; echo</span><br></pre></td></tr></table></figure><p><img src="https://i.imgur.com/8HEibVE.png"></p><h4 id="右上角-gt-新增-repository-（注意這是-app-repository-跟-image-code-repo-不一樣喔）"><a href="#右上角-gt-新增-repository-（注意這是-app-repository-跟-image-code-repo-不一樣喔）" class="headerlink" title="右上角 &gt; 新增 repository （注意這是 app repository, 跟 image/code repo 不一樣喔）"></a>右上角 &gt; 新增 repository （注意這是 app repository, 跟 image/code repo 不一樣喔）</h4><p><img src="https://i.imgur.com/CN4ufs5.png"></p><p><img src="https://i.imgur.com/iY51lnI.png"></p><h3 id="完成-1"><a href="#完成-1" class="headerlink" title="完成"></a>完成</h3><p><img src="https://i.imgur.com/NePwxdw.png"></p><hr><p>以上是我個人簡單試玩的分享。如果是想要接案很多要部署應用的源頭到各處的 ISV 廠商，或業務上需要建立一個自己發布應用給授權的單位使用的平台，透過 VAC(TAC) 加上 kubeapps 體驗應該是蠻流暢的。</p><p><img src="https://i.imgur.com/HiQJjuJ.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本文就是玩玩看：&lt;br&gt;&lt;a href=&quot;https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tac-docs/GUID-get-started-get-started-tanzu-app</summary>
+      
+    
+    
+    
+    <category term="work hack" scheme="https://sapphirelin.com/categories/work-hack/"/>
+    
+    <category term="那根樹枝 Tanzu" scheme="https://sapphirelin.com/categories/work-hack/%E9%82%A3%E6%A0%B9%E6%A8%B9%E6%9E%9D-Tanzu/"/>
+    
+    
+    <category term="VMware" scheme="https://sapphirelin.com/tags/VMware/"/>
+    
+    <category term="Tanzu" scheme="https://sapphirelin.com/tags/Tanzu/"/>
+    
+    <category term="work hack" scheme="https://sapphirelin.com/tags/work-hack/"/>
+    
+    <category term="VMware Application Catalog" scheme="https://sapphirelin.com/tags/VMware-Application-Catalog/"/>
+    
+    <category term="Tanzu Application Catalog" scheme="https://sapphirelin.com/tags/Tanzu-Application-Catalog/"/>
+    
+    <category term="TAC" scheme="https://sapphirelin.com/tags/TAC/"/>
+    
+    <category term="kubeapps" scheme="https://sapphirelin.com/tags/kubeapps/"/>
+    
+    <category term="Application Catalog" scheme="https://sapphirelin.com/tags/Application-Catalog/"/>
+    
+  </entry>
   
   <entry>
     <title>TKG v1.5 GA 更新了什麼？ what&#39;s new 重點整理</title>
