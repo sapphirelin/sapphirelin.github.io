@@ -236,7 +236,42 @@
 
   
   <url>
-    <loc>https://sapphirelin.com/tags/%E7%8B%A1%E5%85%94%E4%B8%89%E7%AA%9F/</loc>
+    <loc>https://sapphirelin.com/tags/VMware/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/work-hack/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/Tanzu/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/tkg/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/Cloud-Native/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/Tanzu-Kubernetes-Grid/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -264,49 +299,7 @@
   </url>
   
   <url>
-    <loc>https://sapphirelin.com/tags/VMware/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/Workspace-ONE/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/EUC/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/VDI/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/SSO/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/UEM/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/Tanzu/</loc>
+    <loc>https://sapphirelin.com/tags/%E7%8B%A1%E5%85%94%E4%B8%89%E7%AA%9F/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -341,13 +334,6 @@
   </url>
   
   <url>
-    <loc>https://sapphirelin.com/tags/work-hack/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://sapphirelin.com/tags/ssh/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -369,27 +355,6 @@
   </url>
   
   <url>
-    <loc>https://sapphirelin.com/tags/CA-certification/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/troubleshooting/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/ssl-thumbprint/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://sapphirelin.com/tags/photon-OS/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -397,7 +362,21 @@
   </url>
   
   <url>
+    <loc>https://sapphirelin.com/tags/CA-certification/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://sapphirelin.com/tags/phos/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/%CF%86%E1%BF%B6%CF%82/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -418,13 +397,6 @@
   </url>
   
   <url>
-    <loc>https://sapphirelin.com/tags/%CF%86%E1%BF%B6%CF%82/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://sapphirelin.com/tags/upgrade/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -439,7 +411,35 @@
   </url>
   
   <url>
-    <loc>https://sapphirelin.com/tags/Photon-OS/</loc>
+    <loc>https://sapphirelin.com/tags/Workspace-ONE/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/EUC/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/UEM/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/VDI/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/SSO/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -474,20 +474,6 @@
   </url>
   
   <url>
-    <loc>https://sapphirelin.com/tags/tkg/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/Tanzu-Kubernetes-Grid/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://sapphirelin.com/tags/tkgm/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -495,7 +481,28 @@
   </url>
   
   <url>
-    <loc>https://sapphirelin.com/tags/Cloud-Native/</loc>
+    <loc>https://sapphirelin.com/tags/domain-redemption-period/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/domain/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/url/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/blog/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -537,34 +544,6 @@
   </url>
   
   <url>
-    <loc>https://sapphirelin.com/tags/domain-redemption-period/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/domain/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/url/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://sapphirelin.com/tags/blog/</loc>
-    <lastmod>2023-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://sapphirelin.com/tags/Workspace-One/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -573,6 +552,27 @@
   
   <url>
     <loc>https://sapphirelin.com/tags/AirWatch/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/Photon-OS/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/troubleshooting/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://sapphirelin.com/tags/ssl-thumbprint/</loc>
     <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
